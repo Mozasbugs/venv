@@ -1,0 +1,160 @@
+{% extends 'project\templates\hard.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>DOCTOR - Responsive HTML &amp; Bootstrap Template</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/modernizr.js"></script>
+
+
+</head>
+<body>
+	
+	<!-- ====================================================
+	header section -->
+	<header class="top-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-5 header-logo">
+					<br>
+					<a href="index.html"><img src="img/logo.png" alt="" class="img-responsive logo"></a>
+				</div>
+
+				<div class="col-md-7">
+					<nav class="navbar navbar-default">
+					  <div class="container-fluid nav-bar">
+					   
+					    <!-- Collect the nav links, forms, and other content for toggling -->
+					      
+					      <ul class="nav navbar-nav navbar-right">
+					        <li><a class="menu" href="#home" >Home</a></li>
+					        <li><a class="menu" href="#service">our services </a></li>
+					        <li><a class="menu" href="#contact"> contact us</a></li>
+					      </ul>
+					    </div><!-- /navbar-collapse -->
+					</nav>
+			</div>
+		</div>
+	</header> <!-- end of header area -->
+
+	<section class="slider">
+		<div class="container-fluid">
+			<div class="row">
+			    <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
+					<div class="header-backup"></div>
+			        <!-- Wrapper for slides -->
+			        <div class="carousel-inner" role="listbox">
+			            <div class="item active">
+			            	<img src="img/slide-one.jpg" alt="">
+			                <div class="carousel-caption">
+		               			<h1>providing</h1>
+		               			<p>highquality service for every patient</p>
+			                </div>
+			            </div>
+			            
+			        </div>			        
+		</div>
+	</section><!-- end of slider section -->
+
+	
+	<!-- service section starts here -->
+	<section class="service text-center" id="service">
+		<div class="container">
+			<div class="row">
+				<h2>our services</h2>
+				<h4>Our clinic supports multiple health fields which are:</h4>
+				<div class="col-md-3 col-sm-6">
+					<div class="single-service">
+						<div class="single-service-img">
+							<div class="service-img">
+								<img class="heart img-responsive" src="img/service1.png" alt="">
+							</div>
+						</div>
+						<h3>Heart problem</h3>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="single-service">
+						<div class="single-service-img">
+							<div class="service-img">
+								<img class="brain img-responsive" src="img/service2.png" alt="">
+							</div>
+						</div>
+						<h3>brain problem</h3>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="single-service">
+						<div class="single-service-img">
+							<div class="service-img">
+								<img class="knee img-responsive" src="img/service3.png" alt="">
+							</div>
+						</div>
+						<h3>knee problem</h3>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="single-service">
+						<div class="single-service-img">
+							<div class="service-img">
+								<img class="bone img-responsive" src="img/service4.png" alt="">
+							</div>
+						</div>
+						<h3>human bones problem</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- end of service section -->
+
+
+	
+
+
+	<!-- contact section starts here -->
+	<section class="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-caption clearfix">
+					<div class="contact-heading text-center">
+						<h2>contact us</h2>
+					</div>
+					<div class="col-md-5 contact-info text-left">
+						<h3>contact information</h3>
+						<div class="info-detail">
+							<ul><li><i class="fa fa-calendar"></i><span>Monday - Friday:</span> 9:30 AM to 6:30 PM</li></ul>
+							<ul><li><i class="fa fa-map-marker"></i><span>Address:</span> 123 Some Street , London, UK, CP 123</li></ul>
+							<ul><li><i class="fa fa-phone"></i><span>Phone:</span> (032) 987-1235</li></ul>
+							<ul><li><i class="fa fa-fax"></i><span>Fax:</span> (123) 984-1234</li></ul>
+							<ul><li><i class="fa fa-envelope"></i><span>Email:</span> info@doctor.com</li></ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-md-offset-1 contact-form">
+						<h3>leave us a message</h3>
+
+						<form action="PHP.php" method="POST">
+							<input class="name" type="text" placeholder="Name" name="name" id="name">
+							<input class="email" type="email" placeholder="Email" name="email" id="email">
+							<input class="phone" type="text" placeholder="Phone No:" name="phone" id="phone">
+							<textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Message" ></textarea>
+							<input class="submit-btn" type="submit" value="SUBMIT">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- end of contact section -->
+
+	
+</body>
+</html>
+
+{% endblock content %}
+
