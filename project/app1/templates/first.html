@@ -3,21 +3,17 @@
 {% load static %}
 
 {% block content %}
-<fav 
+
 <head>
-    <title>
-        Clinic
-    </title>
+    <title>Clinic</title>
+   
+
 </head>    
 <h1> eshta eshta eshta man </h1>
 
 <img src = " {% static 'image/500x500.jpg' %}" alt =""><br>
 <br>
-{% for x in data %}
 
-<h1>{{x.name}}</h1>
-
-{% endfor %}
 <br>
 <span><button><a href="http://127.0.0.1:8000/app2/viewdata/"> Login as patient</a></button></span>
 <br><br>
