@@ -1,8 +1,16 @@
+<DOCTYPE html>
+<html>
 <h1>from the basic file</h1>
 
 {% load static %}
-<link rel= "stylesheet" href= "{% static 'css/style.css' %}">
 
+<link rel="icon"
+        type="image/png"  
+        href="{% static '\image\favicon.ico' %}"> 
+   
+
+<link rel= "stylesheet" href= "{% static 'css/style.css' %}">
+</html>
 {% block content %}
 
 {% endblock  %}
